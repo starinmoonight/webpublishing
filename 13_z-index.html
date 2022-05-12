@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* z-index는 값이 작을수록 아래에, 높을수록 위에 쌓습니다. */
+        * { font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:white; }
+        #box1 {
+            position: absolute;
+            top: 0px; 
+            left: 0px;
+            width: 400px; 
+            height: 400px;
+            background: lightcoral;
+            z-index: 3;
+        }
+        #box2 {
+            position: absolute;
+            top: 100px; 
+            left: 100px;
+            width: 400px; 
+            height: 400px;
+            background: lightcyan;
+            z-index: 2;
+        }
+        #box3 {
+            position: absolute;
+            top: 200px; 
+            left: 200px;
+            width: 400px; 
+            height: 400px;
+            background: lightseagreen;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">box #1</div>
+    <div id="box2">box #2</div>
+    <div id="box3">box #3</div>
+</body>
+</html>
